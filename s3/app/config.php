@@ -6,6 +6,9 @@ return[
             'key' => 'AKIAITKIKDJPSX2TDIJQ',
             'secret' => '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',
             'bucket' => 'unscriptedtest'
+         ],
+         'cloudfront' => [
+            'url' => 'https://d3naaeloyps2sq.cloudfront.net'
          ]
     
 ];

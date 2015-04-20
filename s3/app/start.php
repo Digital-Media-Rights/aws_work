@@ -1,6 +1,8 @@
 <?php
 
  use Aws\S3\S3Client;
+ use Aws\CloudFront\CloudFrontClient;
+ 
 
  require 'vendor/autoload.php';
  $config = require('config.php');
@@ -12,7 +14,11 @@
     
  ]);
  
- 
+ //Cloudfront
+ $cloudfront = CloudFrontClient::factory([
+    'private_key'=>'pk-APKAJ73YE5THUYNW4ZLQ.pem',
+    'key_pair_id' => 'APKAJ73YE5THUYNW4ZLQ' 
+ ])
  
 
 ?>
